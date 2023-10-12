@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% from 'bootstrap4/form.html' import render_form %}
+    <meta charset="UTF-8" />
+    <title>Add Book</title>
+    {% block styles %}
+        {{ bootstrap.load_css() }}
+    {% endblock %}
+  </head>
+  <body>
+    {{ render_form(form) }}
+  </body>
+</html>
